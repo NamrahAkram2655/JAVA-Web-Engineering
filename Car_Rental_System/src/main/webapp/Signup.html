@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SignUP-Car Rental System</title>
+
+<style>
+	h1{
+		text-align: center;
+	}
+	div{
+		padding: 7px 24px;
+		background-color: white;
+    	border-radius: 20px;
+		width: 30vw;
+		margin-left: 9rem;
+		
+	}
+	body{
+		margin-top: 5rem;
+		background-image: url("https://img.freepik.com/free-photo/person-preparing-get-driver-license_23-2150167585.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	input[type="text"]
+	{
+		width: 19vw;
+		height: 3.5vh;
+	}
+	.container {
+    background : rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+   
+}
+	input[type="submit"]
+	{	
+		cursor: pointer;
+		background-color: grey;
+	    border-radius: 8px;
+	    color: white;
+	    padding: 5px 10px;
+	    border : none;
+	}
+	input[type="radio"]
+	{	
+		cursor: pointer;
+	}
+	#account{
+		text-align: center;
+		font-weight: bold;
+	}
+	a{
+		color : #23425c;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>SignUp</h1>
+	
+	<form action="SignUpServlet" method="post">
+	
+		Name : <input type="text" name="personName" required /> <br><br>
+		Email : <input type="email" name="email" required /> <br><br>
+		Gender <br>
+		<input type="radio" name="gender" value="male" /> Male
+		<input type="radio" name="gender" value="female" /> Female
+		<input type="radio" name="gender" value="other" /> Other
+		<br><br>
+		Phone Number : <input type="text" name="contact" required /> <br><br>
+		Select Your City
+		<select name="City">
+			<option selected>Choose</option>
+			<option>Lahore</option>
+			<option>Karachi</option>
+			<option>Islamabad</option>
+			<option>Kasur</option>
+			<option>Other</option>
+		</select>
+		<br><br>
+		Create a strong password 
+		<br><br>
+		Password:  <input type="password" name="passwd">
+		<br><br>
+		Select User Type
+		 <select id="userType" name="userType" required>
+		 	 <option value="null" selected>Select</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select><br><br>
+		<input type="submit" value="Submit" onclick="Login.html">  
+		
+	</form>
+	
+	<p id="account">Already have an account? <a href = "Login.html">Login</a> </p>
+	</div>
+</body>
+</html>

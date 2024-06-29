@@ -1,0 +1,3 @@
+Suppose you have a file test.txt on location D:/files/ 
+Check that either file exists on this location or not? 
+Display read/write permission, creation and "last modified time".

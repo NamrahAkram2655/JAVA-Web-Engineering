@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<servlet>
+		<servlet-name>SignUpServlet</servlet-name>
+		<servlet-class>SignUpServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SignUpServlet</servlet-name>
+		<url-pattern>/SignUpServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddCarServlet</servlet-name>
+		<servlet-class>AddCarServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddCarServlet</servlet-name>
+		<url-pattern>/AddCarServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateCarServlet</servlet-name>
+		<servlet-class>UpdateCarServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateCarServlet</servlet-name>
+		<url-pattern>/UpdateCarServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteCarServlet</servlet-name>
+		<servlet-class>DeleteCarServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteCarServlet</servlet-name>
+		<url-pattern>/DeleteCarServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchCarServlet</servlet-name>
+		<servlet-class>SearchCarServlett</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchCarServlet</servlet-name>
+		<url-pattern>/SearchCarServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>

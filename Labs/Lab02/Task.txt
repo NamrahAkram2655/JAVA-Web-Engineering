@@ -1,0 +1,3 @@
+Create a calculator with GUI interface, it should perform all functions of add, multiply, 
+subtract and divide (Also check how to convert string to double as GUI take all inputs in string format ) 
+Make a menu which takes input of which task you want to perform

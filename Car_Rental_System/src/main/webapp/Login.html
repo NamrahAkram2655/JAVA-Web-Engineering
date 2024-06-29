@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login-Car Rental System</title> 
+<style>
+	body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0; /* Fallback color */
+    background-image: url("https://th.bing.com/th/id/OIP.Gkplp8bL8o0jdmIOLkQn6QHaFS?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    background : rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4c81af;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #23425c;
+}
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    color: black;
+}
+
+.signup-text a {
+   	color: #23425c;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+	 <div class="container">
+        <h2>Login to Your Account</h2>
+        <form action="LoginServlet" method="post">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="passwd">Password:</label>
+            <input type="password" id="passwd" name="passwd" required>
+            <input type="submit" value="Login" id="btn">
+        </form>
+        <p class="signup-text">Don't have an account? <a href="Signup.html">Sign Up</a></p>
+    </div>
+</body>
+</html>

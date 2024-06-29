@@ -1,0 +1,5 @@
+Assuming that you have a container of type HashMap h,
+containing the different objects of Person and Teacher 
+type on the basis of key as integer. Write a code to 
+retrieve all objects from HashMap with the help of Iterator
+and show the attributes of Person/Teacher by calling its Show() method.

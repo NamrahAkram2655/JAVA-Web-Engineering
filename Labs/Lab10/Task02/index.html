@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<style>
+	.all{
+		color:red;
+	}
+</style>
+
+</head>
+<body>
+	
+	<table>
+		<tr>
+			<td>
+				Name : <input type="text" placeholder="Enter Name here..." id="name">
+			</td>
+			<td><div id="nameError" class="all"></div></td>
+		</tr>
+		<tr>
+			<td>
+				Email : <input type="text" placeholder="Enter Email here..." id="email">
+			</td>
+			<td><span id='emailError' class='all' ></span></td>
+		</tr>
+		<tr>
+			<td>
+				<button onClick="submitForm()">Submit</button>
+			</td>
+		</tr>
+	</table>
+	
+	<script>
+document.getElementById('name').onblur = function() {
+
+    var name = this.value;
+	
+    if(name.length < 1)
+	{
+        document.getElementById('nameError').textContent = "Please enter a valid name.";
+    } else
+	{
+        document.getElementById('nameError').textContent = "";
+    }
+};
+
+document.getElementById('email').onblur = function() {
+
+    var email = this.value;
+    
+	if(email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+	
+        document.getElementById('emailError').innerText = "Please enter a valid email address.";
+    } else {
+	
+        document.getElementById('emailError').innerText = "";
+    }
+};
+
+function submitForm() {
+    
+    document.getElementById('name').blur();
+    document.getElementById('email').blur();
+	}
+	</script>
+</body>
+</html>
