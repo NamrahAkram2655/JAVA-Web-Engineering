@@ -30,7 +30,7 @@ and throwing exceptions when necessary. throwing invalid if not found. <br>
 <hr>
 <h4>Lab 11  </h4> Create a functional calculator using HTML, CSS, and JavaScript. Design buttons for numbers, operators, and clear functions in HTML, style with CSS for a modern look, and use JavaScript for logic to handle user inputs, perform calculations, and update results dynamically on the interface.
 <br>
-
+<hr>
 <h3>Practice Codes </h3> <br>
 Provided some practie codes with applied basic functionalities on every and most important topics of java <br>
 
