@@ -1,8 +1,6 @@
-<h3>Labs</h3>
 <h4>Lab 01  </h4> <br>
 These file defines a base class for various shapes in Java, encapsulating common properties and behaviors. Key concepts include encapsulation, using private fields with public getters and setters, and abstraction, with abstract methods for subclasses to implement. <br>
 Majorly represents an employee in Java, emphasizing encapsulation and class design. It features private fields with public getters and setters, overloaded constructors for flexible object creation, and supports potential polymorphism for subclass-specific behaviors. <br>
-<hr>
 <br> <b>Task 01 : </b> a Student class with private attributes: roll number, name, email, and address. Implement default, parameterized, and copy constructors, as well as setter and getter methods. Include inputData() and showData() methods for user input and data display. <br>
 <b>Task 02 : </b>  a Shape class with area and volume attributes. Include default, parameterized, and copy constructors, a getInput() method using GUI components, and an overridden toString() method. Extend this class with Square (attributes: width, length, height) and Sphere (attributes: radius, Pi) subclasses, overriding getInput() and toString() methods. <br>
 <hr>
